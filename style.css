@@ -1,0 +1,68 @@
+html{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
+
+html *{
+    margin: 0;
+}
+
+body{
+    background: rgb(10,59,167);
+    background: linear-gradient(166deg, rgba(10,59,167,1) 0%, rgba(7,6,98,1) 34%, rgba(1,1,45,1) 98%, rgba(19,0,41,1) 100%);
+}
+
+.main_header{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2.5%;
+}
+.main_header_hr{
+    width: 300px;
+    margin: auto;
+}
+
+.black_hole_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+}
+
+.black_hole{
+    position: relative;
+    overflow: hidden;
+    top: 35vh;
+    left: 40vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+    background: rgb(1,0,40);
+background: radial-gradient(circle, rgba(1,0,40,1) 0%, rgba(27,2,113,1) 13%, rgba(74,0,255,0.7105217086834734) 29%, rgba(19,0,41,0) 43%);
+}
+
+.maintenance_div{
+    text-align: center;
+    margin-top: 25vh;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:850px){
+    .main_header_hr{
+        width: 150px;
+        margin: auto;
+    }
+
+    .main_header{
+        font-size: 3rem;
+    }
+    .maintenance_div{
+        margin-top: 20vh;
+        font-size: 60px;
+    }
+}
